@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Atributos en html</title>
+  </head>
+
+  <body>
+
+    <h1>Atributos en HTML</h1>
+    <p>Los atributos en HTML son propiedades que se añaden a las tiquetas para proporcionar más infromación o controlar su comportamiento.</p>
+    <p>Siempre estan presentes dentro de las etiquetas de apertura y se compone de un valor.</p>
+
+    <!--
+    Sintaxis
+    <etiqueta atributo="valor">...</etiqueta>
+    -->
+
+    <!--
+    1. Atirbuto src
+    Especifica la URL de un recurso como imagen, audio o video.
+    Se usa: <img>,<audio>, <video>, <iframe>
+    Se debe definir la ubicación del archivo que se va a cargaro mostrar.
+    -->
+
+    <img src="./goyo 2.jpeg" alt="Goyo" />
+    <video src="./video.mp4"></video>
+    <audio src="./audio.mp3"></audio>
+    <iframe src=""></iframe>
+
+    <!--
+    2. alt
+    Proporciona un texto alternativo para cuendo una imagen no se puede mostrar.
+    Esto es para ver volver accecibles las imagenes a los usuarios con discapacidades visuales.
+    -->
+
+    <img src="./imagen.png" alt="imagen">
+
+    <!--
+    3. target=""
+    Define donde se abrira un enlace.
+    _blank pestaña nueva
+    _self misma pestaña (valor por defecto)
+    -->
+
+    <a href="https://instagram.com" target="_blank">Sigueme en instagram</a>
+
+    <!--
+    4. rel=""
+    Especifica la relación entre el documento ctual y un recurzo enlazado.
+    -->
+
+    <link rel="stylesheet" href="./Style.css">
+    <a href="https://google.com" rel="nofollow"></a>
+    <script rel="javascript" src="./script.js">
+      let mensaje = "hola" ;
+      console.log(mensaje);
+    </script>
+
+    <!--
+    5. style=""
+    Funciona para definir estilos CSS en línea directamente en la etiqueta.
+    Aplica estos elementos a un elemento directamente. no es recomendable usarlo mucho, lo recomendable es usar hojas de estilo.
+    -->
+
+    <p style="color: white; font-size: 56">Texto blanco</p>
+
+    <!--
+    6. id=""
+    Define un identificador unico para una etiqueta.
+    Funciona para cualquier etiqueta y se tiliza para enlazar un elemento con una hoja de estilos o javascript.
+    El valor de id nosotros lo definimos.
+    -->
+
+    <button id="miboton">Picale aquí</button>
+
+    <script rel="javascript">
+      const boton = document.getElementById("miboton");
+      boton.addEventListener("click");
+
+      function mensaje() {
+        alert("Ya casi terminamos")
+      }
+    </script>
+    
+
+
+
+  </body>
